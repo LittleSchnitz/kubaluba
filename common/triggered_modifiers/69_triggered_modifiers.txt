@@ -1,0 +1,35 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+####################
+# Kuba Kuban Cuban.
+####################
+kuba_kuban_cuban =  {
+	potential = {
+		normal_or_historical_nations = yes
+		has_discovered = 2654 # Baracoa
+		has_discovered = 2655 # Bayamo
+		has_discovered = 2656 # Camaguey
+		has_discovered = 486 # Guantanamo
+		has_discovered = 484 # Havana
+		has_discovered = 485 # Moron
+		has_discovered = 287 # Kuban
+	}
+	
+	trigger = {
+		owns = 2654 # Baracoa
+		owns = 2655 # Bayamo
+		owns = 2656 # Camaguey
+		owns = 486 # Guantanamo
+		owns = 484 # Havana
+		owns = 485 # Moron
+		owns = 287 # Kuban
+
+		owns = 4089 # Kuba
+		owns = 4088 # Munene
+		owns = 4068 # Nunu
+		owns = 4099 # Hemba
+		owns = 4097 # Luba
+		owns = 4105 # Kusu
