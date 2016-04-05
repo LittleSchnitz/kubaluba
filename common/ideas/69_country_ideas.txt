@@ -1,0 +1,37 @@
+KLB_ideas = {
+	start = {  
+		advisor_pool = 1
+		production_efficiency = 0.1
+	}
+  
+	bonus = {
+		land_morale = 0.1
+	}
+  
+	trigger = {
+		tag = KLB
+	}
+	free = yes
+	
+	klb_journey_of_enlightenment = {
+		dip_tech_cost_modifier = -0.15
+	}
+	klb_children_of_woot = {
+		development_cost = -0.1
+	}
+	klb_people_of_ornaments = {
+		prestige = 1
+	}
+	klb_usurpation_of_the_chiefs = {
+		spy_offence = 0.2
+	}
+	klb_ngesh_dancers = {
+		hostile_attrition = 1
+	}
+	klb_ndop_statue = {
+		legitimacy = 1
+	}
+	klb_courtly_competition = {
+		global_unrest = -1
+	}
+}
