@@ -19,12 +19,12 @@ kuba_kuban_cuban =  {
 	}
 	
 	trigger = {
-		owns = 2654 # Baracoa
-		owns = 2655 # Bayamo
-		owns = 2656 # Camaguey
-		owns = 486 # Guantanamo
-		owns = 484 # Havana
-		owns = 485 # Moron
+		owns_or_vassal_of = 2654 # Baracoa
+		owns_or_vassal_of = 2655 # Bayamo
+		owns_or_vassal_of = 2656 # Camaguey
+		owns_or_vassal_of = 486 # Guantanamo
+		owns_or_vassal_of = 484 # Havana
+		owns_or_vassal_of = 485 # Moron
 		owns = 287 # Kuban
 
 		owns = 4089 # Kuba
@@ -33,3 +33,11 @@ kuba_kuban_cuban =  {
 		owns = 4099 # Hemba
 		owns = 4097 # Luba
 		owns = 4105 # Kusu
+	}
+
+	#Reward From Forming Kuba-Luba (Not decided yet)
+	
+	prestige = 0.5
+	add_permanent_claim = KUB # Kuba
+	add_permanent_claim = LUB # Luba
+}
