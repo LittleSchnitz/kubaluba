@@ -1,0 +1,75 @@
+country_decisions = {
+
+	kubaluba_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = yes
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			#culture_group = congo
+
+		allow = {
+			tag = KUB # Kuba
+			OR = {
+				tag = LUB # Luba
+		}
+
+			NOT = { exist = SPA }
+			adm_tech = 5
+			is_subject = yes
+			is_nomad = no
+			is_at_war = no
+			owns_core_province =  4097 # Luba Hemba Lusu
+			owns_core_province =  4099
+			owns_core_province =  4105 # Schnitzel sucks, best regards Lasse :)
+	
+			}
+
+		effect = {
+			change_tag = SPA
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+					is_emperor = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			custom_tooltip = spanish_unification_effect.tooltip
+			hidden_effect = {
+				iberia_region = {
+					limit = {
+						NOT = { area = macaronesia_area }
+						NOT = { area = alentejo_area }
+						NOT = { area = beieras_area }
+					}
+					add_permanent_claim = SPA
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		
+		}
+	}
+}
