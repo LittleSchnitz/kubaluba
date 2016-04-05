@@ -1,0 +1,21 @@
+country_decisions = {
+	KubaLuba = {
+		major = yes
+		potential = {
+			tag = any
+			
+		}
+	allow ={
+		tag = KUB
+		OR {tag = LUB # Luba?
+		}
+		NOT = { exist = SPA }
+		owns_core_province =  4097 # Luba Hemba Lusu
+		owns_core_province =  4099
+		owns_core_province =  4105 # Schnitzel sucks, best regards Lasse :)
+		}
+		effect = {
+		change_tag = SPA
+		}
+	}
+}
